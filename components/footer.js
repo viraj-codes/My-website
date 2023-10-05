@@ -6,7 +6,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import { Grid } from '@mui/material';
 function Footer() {
     return (
-        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} style={{paddingTop: '100px', textAlign: 'center' ,overflow:'hidden' }}>
+        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} style={{paddingTop: '30px', textAlign: 'center' ,overflow:'hidden' }}>
             {/* <Grid item xs>
                 <Item>1</Item>
             </Grid> */}

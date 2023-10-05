@@ -14,7 +14,9 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import pImg from '../images/JD.jpg'
 import Image from 'next/image'
-const pages = ['Products', 'Pricing', 'Blog'];
+import Link from 'next/link';
+
+const pages = ['Blog', 'About', 'Contact'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Navbar() {
@@ -28,7 +30,9 @@ function Navbar() {
     setAnchorElUser(event.currentTarget);
   };
 
-  const handleCloseNavMenu = () => {
+  const handleCloseNavMenu = (val) => {
+    const element = document.getElementById(val)
+    element?.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
     setAnchorElNav(null);
   };
 
@@ -83,14 +87,16 @@ function Navbar() {
                 horizontal: 'left',
               }}
               open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
+              onClose={(e)=>handleCloseNavMenu(e.target.value)}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: 'block', md: 'none' },justifyContent: 'flex-end',paddingRight: 2
               }}
+              
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page} onClick={()=>handleCloseNavMenu(page)}>
+                  <Typography textAlign="center">{page}
+                 </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -114,11 +120,11 @@ function Navbar() {
           >
             Viraj Joshi
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end',paddingRight: 2 }}>
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={()=>handleCloseNavMenu(page)}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {page}

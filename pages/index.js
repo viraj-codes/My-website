@@ -8,6 +8,7 @@ import Navbar from "@/components/navbar";
 import Slideshow from "@/components/slideshow";
 import Slideshow1 from "@/components/slideshow1";
 import LandingStyles from '@/styles/landing';
+import About from '../components/about';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -48,15 +49,21 @@ export default function Home() {
       <div className="container-two">
         <Slideshow />
       </div>
-      <div className="container-three">
+      <div className="container-three" id='About'>
         <div >
           <div className="section-heading">
-            <h2 className="aboutTex">About us</h2>
+            <h2 className="aboutTex">About Me</h2>
             <div className="heading-line"></div>
+            <div>
+              <About />
+            </div>
           </div>
         </div>
       </div>
-      <div className="footerBox">
+      <div className="footerBox" id='Contact'>
+        <div className="section-heading">
+          <h2 className="aboutTex">Contact Me</h2>
+        </div>
         <Footer />
       </div>
 

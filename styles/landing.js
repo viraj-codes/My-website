@@ -14,7 +14,7 @@ export default css`
 .centeredTxt-line{ display: block;height: 3px;width: 100px;margin: 10px auto 20px;background: white;}
 .centeredTxt-first{color:white;font-size:40px;}
 .centeredTxt-two{color:white;font-size:40px;}
-.container-three {height:400px; background: #F1F2F3;padding: 50px 0px;}
+.container-three {height:100%; background: #F1F2F3;padding: 50px 0px;}
 .section-heading h2 {font-size: 38px;text-transform: uppercase;}
 .aboutTex{color: rgb(58, 58, 58);font-weight: 700; margin-bottom: 20px;font-family: Montserrat, sans-serif;text-align:center}
 .heading-line{ display: block;height: 1px;width: 80px;margin: 10px auto 20px;background: rgb(51, 51, 51);}
