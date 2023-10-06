@@ -6,15 +6,24 @@ export default css`
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
 /* .container{background-image: url("https://images.wallpaperscraft.com/image/single/macbook_laptop_cup_177223_3840x2160.jpg");height:100vh ;background-repeat: no-repeat;background-size: cover;} */
 .container-two {height:500px; margin: 50px; background: #fff;}
-.footerBox{width: 100%;padding: 150px 0px;background-color:#fff}
-.subfooterBox{height:150px;background-color:#20B2AA;text-align: center;color: white;}
+.container-three {height:100%; background: #F1F2F3;padding: 50px 0px;}
+.container-fore{width: 100%;padding: 150px 0px;background-color:#fff}
+.container-fifth{height:150px;background-color:#20B2AA;text-align: center;color: white;}
+
 .footerTxt-one{padding-top:50px}
 .footerTxt-two{padding-top:15px}
+
 .centeredTxt {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);text-align:center}
 .centeredTxt-line{ display: block;height: 3px;width: 100px;margin: 10px auto 20px;background: white;}
 .centeredTxt-first{color:white;font-size:40px;}
 .centeredTxt-two{color:white;font-size:40px;}
-.container-three {height:100%; background: #F1F2F3;padding: 50px 0px;}
+
+//img
+.outer-wrapper{min-height: 70vh; background-attachment: fixed; background-position: center;background-repeat: no-repeat;background-size: cover;}
+.bgm1{background-image: url("https://cdn.pixabay.com/photo/2020/01/14/14/04/oldtimer-4765155_1280.jpg");}
+.bgm2{background-image: url("https://images.pexels.com/photos/2599247/pexels-photo-2599247.jpeg?auto=compress&cs=tinysrgb&w=600");}
+
+//
 .section-heading h2 {font-size: 38px;text-transform: uppercase;}
 .aboutTex{color: rgb(58, 58, 58);font-weight: 700; margin-bottom: 20px;font-family: Montserrat, sans-serif;text-align:center}
 .heading-line{ display: block;height: 1px;width: 80px;margin: 10px auto 20px;background: rgb(51, 51, 51);}

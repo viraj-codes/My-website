@@ -17,10 +17,7 @@ export default function Home() {
     <div >
       <Navbar />
       <div className="container">
-
         <Slideshow1 />
-
-
         <div className="centeredTxt">
           <div className="centeredTxt-first">
             GIVIN THE WORLD
@@ -30,25 +27,11 @@ export default function Home() {
             A DESIGN
           </div>
         </div>
-
-
-        {/* <div className="txtAnim">
-                    <h1 className="maintxt">Welcome to my page...</h1>
-                    <div >
-                        <h1 className="subtxt">
-                            <span>Think</span>
-                            <div className="message">
-                                <div className="word">Big</div>
-                                <div className="word">fast</div>
-                                <div className="word">ahead</div>
-                            </div>
-                        </h1>
-                    </div>
-                </div> */}
       </div>
       <div className="container-two">
         <Slideshow />
       </div>
+      <div className='outer-wrapper bgm1'></div>
       <div className="container-three" id='About'>
         <div >
           <div className="section-heading">
@@ -60,19 +43,23 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="footerBox" id='Contact'>
-        <div className="section-heading">
-          <h2 className="aboutTex">Contact Me</h2>
+      <div className="container-fore">
+        <div id='Contact'>
+          <div className="section-heading">
+            <h2 className="aboutTex">Get In Touch</h2>
+          </div>
+          <Footer />
         </div>
-        <Footer />
       </div>
 
-      <div className="subfooterBox">
-        <div className="footerTxt-one">
-          Copyright © VJ Company. All rights reserved.
-        </div>
-        <div className="footerTxt-two">
-          Designed by Viraj Joshi
+      <div className="container-fifth">
+        <div>
+          <div className="footerTxt-one">
+            Copyright © VJ Company. All rights reserved.
+          </div>
+          <div className="footerTxt-two">
+            Designed by Viraj Joshi
+          </div>
         </div>
       </div>
       <style jsx>{LandingStyles}</style>
